@@ -85,21 +85,21 @@ body {
   font-weight: 400;
   font-size: 34px;
   line-height: 44px;
-  color: #32325d;
+  color: #160b35;
 }
 
 .bodyTitle {
   font-weight: 500;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 32px;
-  color: #32325d;
+  color: #160b35;
 }
 
 .bodyText {
   font-weight:400;
   font-size: 17px;
   line-height: 28px;
-  color: #525f7f;
+  color: #939a9e;
 }
 
 @media (min-width: 670px) {

@@ -8,7 +8,7 @@ const Hero = props => (
     <BodyText className="bodyText">{props.text}</BodyText>
     <ButtonList>
       {/* TODO: apply button colors via color variables */}
-      <li style={{ marginRight: `20px` }}><Button backgroundColor="blue" color="white" href={props.primaryButtonLink}>{props.primaryButtonText}</Button></li>
+      <li style={{ marginRight: `20px` }}><Button backgroundColor="#2f64ec" color="white" href={props.primaryButtonLink}>{props.primaryButtonText}</Button></li>
       <li><Button href={props.secondaryButtonLink}>{props.secondaryButtonText}</Button></li>
     </ButtonList>
   </>
@@ -17,7 +17,6 @@ const Hero = props => (
 export default Hero
 
 const Headline = styled.h1`
-  color: #1d1d5c;
   font-size: 32px;
 
   @media (min-width: 670px) {
@@ -27,10 +26,8 @@ const Headline = styled.h1`
 `
 const BodyText = styled.p`
   margin: 25px 0;
-  color: #5e6d89;
-
   @media (min-width: 670px) {
-    margin: 25px 56% 80px 0;
+    margin: 25px 56% 60px 0;
   }
 `
 
@@ -56,7 +53,7 @@ const Button = styled.a`
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .025em;
-  color: ${props => props.color || "blue"};
+  color: ${props => props.color || "#2f64ec"};
   text-decoration: none;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;

@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 // import SEO from "../components/seo"
 import Hero from "../components/hero"
 import ThreeColSection from "../components/threeCol"
+import CTA from "../components/cta"
 import styled from "styled-components"
 
 import style from "./index.module.scss"
@@ -18,11 +19,10 @@ const IndexPage = () => (
       <section id={style.intro} className="container">
         <Hero
           headline="The cross-border payments platform"
-          text="Individuals and merchants use BorderFreePay to transfer 
-            and spend money across borders. We provide a complete set of 
-            building blocks to support virtually any business model, 
-            including on-demand businesses, e‑commerce, crowdfunding, 
-            fintech, and travel and events. "
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          eu neque eu dolor suscipit porttitor vel vitae mauris. Quisque vel 
+          tortor vulputate, fringilla lorem pharetra, dictum nisl. Aenean vulputate sem leo, 
+          id tempus ipsum iaculis et. "
           primaryButtonLink="https://styled-components.com/docs/basics#passed-props"
           primaryButtonText="Start Now"
           secondaryButtonLink="https://github.com/KyleAMathews/typography.js"
@@ -30,39 +30,45 @@ const IndexPage = () => (
         />
       </section>
     </header>
-    <ThreeColSection  
-      leftTitle="Integrate quickly"
-      leftText="Building the payments infrastructure for your platform 
-        used to be a big undertaking—no longer. Take advantage of pre-made 
-        UI components to launch faster and simplify operations. Sign up 
-        new users on your platform and get them paid—quickly."
-      centerTitle="Customize"
-      centerText="Connect is API-first and lets you design the best experience 
-      for your platform. You can customize onboarding, set payout timing, allow 
-      complex money movement, and get integrated financial reporting. You own 
-      the experience from end to end."
-      rightTitle="Go global"
-      rightText="Pay out sellers in 30+ countries around the world. You don’t 
-      need separate local subsidiaries and banking relationships in each 
-      market—Connect takes care of the complexity. Connect’s functionality 
-      is standardized, regardless of the country."
-    />
+    <section id={style.benefits} className="container">
+      <ThreeColSection  
+        leftTitle="Quick integration"
+        leftText="Curabitur ultricies purus velit, at condimentum eros gravida at. Curabitur mattis 
+        eget massa ut congue. Curabitur fermentum ligula in urna vehicula iaculis. Vivamus 
+        vitae urna ante. Pellentesque interdum ante mollis est feugiat, id sollicitudin libero 
+        laoreet."
+        centerTitle="Transfer safely"
+        centerText="Nam mattis nulla et nulla vestibulum molestie id ut justo. Morbi sagittis 
+        accumsan libero vitae dictum. Fusce vitae tellus tempus massa euismod tincidunt eu vitae 
+        magna. Integer non pulvinar ex, non pharetra sem. Mauris consequat enim ex, posuere 
+        pellentesque elit scelerisque non."
+        rightTitle="Cross-border"
+        rightText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        eu neque eu dolor suscipit porttitor vel vitae mauris. Quisque vel 
+        tortor vulputate, fringilla lorem pharetra, dictum nisl. Aenean vulputate sem leo, 
+        id tempus ipsum iaculis et."
+      />
+    </section>
     <CenteredSection className="container">
-      <Title className="sectionTitle">Routing Payments</Title>
+      <Title className="sectionTitle">Feature Breakdown</Title>
       <GridContainer>
         <Quote className="bodyText">
-          A powerful routing and payout engine that makes 
-          it easy to send money to recipients, no matter your business model.
+        Aenean in enim odio. Suspendisse et magna nibh. 
+        Praesent justo quam, ornare vehicula maximus nec, consectetur eu ipsum. 
         </Quote>
         <BodyText className="bodyText">
-          Connect will automatically track balances, batch earnings into payouts, time 
-          transfers with local cutoffs, and retry failed transfers. You can also incorporate 
-          advanced flows like Account Debits, one-to-many payments, and others. Connect’s 
-          payout engine lets you specify payout timing for your users (daily, weekly or monthly). 
-          Connect lets you get recipients paid faster and removes errors and reconciliation work. 
+          Curabitur ultricies purus velit, at condimentum eros gravida at. Curabitur mattis 
+          eget massa ut congue. Curabitur fermentum ligula in urna vehicula iaculis. Vivamus 
+          vitae urna ante. Pellentesque interdum ante mollis est feugiat, id sollicitudin libero 
+          laoreet. Integer sit amet rutrum risus. Maecenas sagittis placerat nulla id commodo. 
+          Mauris egestas dolor ac fermentum sodales. Nulla faucibus nisl at mauris mollis, sed 
+          rutrum nisl consequat.
         </BodyText>
       </GridContainer>
     </CenteredSection>
+    <footer>
+      <CTA />
+    </footer>
   </Layout>
 )
 
@@ -90,7 +96,7 @@ const Quote = styled.p`
   margin-bottom: .8em;
   font-size: 24px;
   line-height: 36px;
-  color: #3ecf8e;
+  color: #20a86c;
 
   @media (min-width: 670px) {
     text-align: center;

@@ -3,16 +3,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 const ThreeColSection = props => (
-  <section id={props.id} className="container">
-    <GridContainer>
-      <Title className="bodyTitle">{props.leftTitle}</Title>
-      <Text className="bodyText">{props.leftText}</Text>
-      <Title className="bodyTitle">{props.centerTitle}</Title>
-      <Text className="bodyText">{props.centerText}</Text>
-      <Title className="bodyTitle">{props.rightTitle}</Title>
-      <Text className="bodyText">{props.rightText}</Text>
-    </GridContainer>
-  </section>
+  <GridContainer>
+    <Title className="bodyTitle">{props.leftTitle}</Title>
+    <Text className="bodyText">{props.leftText}</Text>
+    <Title className="bodyTitle">{props.centerTitle}</Title>
+    <Text className="bodyText">{props.centerText}</Text>
+    <Title className="bodyTitle">{props.rightTitle}</Title>
+    <Text className="bodyText">{props.rightText}</Text>
+  </GridContainer>
 )
 
 export default ThreeColSection
@@ -25,10 +23,12 @@ const GridContainer = styled.div`
   }
 `
 const Title = styled.h1`
-  padding: 8px 0 10px;
+  color: #2f64ec;
+  padding: 8px 0 12px;
 `
 const Text = styled.p`
   margin-bottom: 2em;
+  color: #443c5d;
   @media (min-width: 670px) {
     margin: 0;
   }
