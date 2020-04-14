@@ -73,7 +73,7 @@ const IndexPage = () => (
 )
 
 const CenteredSection = styled.div`
-
+  padding-bottom: 60px;
 `
 
 const GridContainer = styled.div`

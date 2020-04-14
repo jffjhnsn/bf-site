@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const CTA = () => (
-  <FlexContainer>
+  <FlexContainer className="container">
     <Content>
       <Title className="sectionTitle">
         <Subtitle>Ready to get started?</Subtitle>
@@ -21,6 +21,9 @@ const CTA = () => (
 export default CTA
 
 const FlexContainer = styled.div`
+  background-color: #f1f6f9;
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,15 +51,16 @@ const Subtitle = styled.span`
 `
 
 const ButtonList = styled.ul`
+  display: flex;
   -webkit-box-flex: 1;
   -ms-flex: 1 0 50%;
   flex: 1 0 50%;
-
-  @media (min-width: 670px) {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-  }
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: -10px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 `
 
 const Button = styled.a`
