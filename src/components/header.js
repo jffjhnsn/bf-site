@@ -1,35 +1,48 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
+import Logo from "../assets/company-logo.svg"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+  <header>
+    <Container className="container">
+      <Link to="/">
+        <Logo height="59" width="189" alt={siteTitle}/>
+      </Link>
+      <NavLinkList>
+        <ListLink to="/products/">Products</ListLink>
+        <ListLink to="/company/">Company</ListLink>
+      </NavLinkList>
+    </Container>
   </header>
 )
+
+const Container = styled.div`
+  padding-top: 20px;
+`
+
+const ListLink = props => (
+  <StyledListLink>
+    <li>
+      <Link className="bodyTitle" to={props.to}>{props.children}</Link>
+    </li>
+  </StyledListLink>
+)
+
+const StyledListLink = styled.div`
+  display: inline-block;
+  margin-right: 1rem;  
+  // text-decoration: none;
+
+`
+
+const NavLinkList = styled.ul`
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  float: right;
+`
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
