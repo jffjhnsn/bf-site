@@ -3,19 +3,21 @@ import React from 'react'
 import styled from 'styled-components'
 
 const CTA = () => (
-  <FlexContainer className="container">
-    <Content>
-      <Title className="sectionTitle">
-        <Subtitle>Ready to get started?</Subtitle>
-        Get in touch or create an account.
-      </Title>
-    </Content>
-    <ButtonList>
-      {/* TODO: apply button colors via color variables */}
-      <li><Button backgroundColor="#2f64ec" color="white" href="/">Contact us</Button></li>
-      <li><Button href="/">Create account</Button></li>
-    </ButtonList>
-  </FlexContainer>
+  <>
+    <FlexContainer className="container">
+      <Content>
+        <Title className="sectionTitle">
+          <Subtitle>Ready to get started?</Subtitle>
+          Get in touch or create an account.
+        </Title>
+      </Content>
+      <ButtonList>
+        {/* TODO: apply button colors via color variables */}
+        <li><Button backgroundColor="#2f64ec" color="white" href="/">Contact us</Button></li>
+        <li><Button href="/">Create account</Button></li>
+      </ButtonList>
+    </FlexContainer>
+  </>
 )
 
 export default CTA

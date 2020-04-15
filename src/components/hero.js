@@ -6,11 +6,11 @@ const Hero = props => (
   <>
     <Headline className="sectionTitle">{props.headline}</Headline>
     <BodyText className="bodyText">{props.text}</BodyText>
-    <ButtonList>
+    <ButtonGroup>
       {/* TODO: apply button colors via color variables */}
       <li style={{ marginRight: `20px` }}><Button backgroundColor="#2f64ec" color="white" href={props.primaryButtonLink}>{props.primaryButtonText}</Button></li>
       <li><Button href={props.secondaryButtonLink}>{props.secondaryButtonText}</Button></li>
-    </ButtonList>
+    </ButtonGroup>
   </>
 )
 
@@ -31,7 +31,7 @@ const BodyText = styled.p`
   }
 `
 
-const ButtonList = styled.ul`
+const ButtonGroup = styled.ul`
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

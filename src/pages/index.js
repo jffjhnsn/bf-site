@@ -16,7 +16,7 @@ import style from "./index.module.scss"
 const IndexPage = () => (
   <Layout>
     <header>
-      <section id={style.intro} className="container">
+      <Intro>
         <Hero
           headline="The cross-border payments platform"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -28,7 +28,7 @@ const IndexPage = () => (
           secondaryButtonLink="https://github.com/KyleAMathews/typography.js"
           secondaryButtonText="Contact Us"
         />
-      </section>
+      </Intro>
     </header>
     <section id={style.benefits} className="container">
       <ThreeColSection  
@@ -71,6 +71,24 @@ const IndexPage = () => (
     </footer>
   </Layout>
 )
+
+const Container = styled.section`
+  max-width:1040px;
+  margin:0 auto;
+  padding:0 20px;
+  width:100%;
+`
+
+const Intro = styled(Container)`
+  padding-top: 160px;
+  padding-bottom: 120px;
+  // background-color: forestgreen;
+  .sectionTitle {
+    color: forestgreen;
+    font-size: 20px;
+  }
+`
+
 
 const CenteredSection = styled.div`
   padding-bottom: 60px;
