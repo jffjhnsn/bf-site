@@ -39,7 +39,8 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/ // See below to configure properly
+          include: /assets/,
+          omitKeys: ['rdfResource', 'rdfAbout', 'xmlnsDc', 'xmlnsCc', 'xmlnsRdf', 'xmlnsSvg']
         }
       }
     }
