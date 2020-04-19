@@ -82,11 +82,10 @@ const Container = styled.section`
 const Intro = styled(Container)`
   padding-top: 160px;
   padding-bottom: 120px;
-  // background-color: forestgreen;
-  .sectionTitle {
-    color: forestgreen;
-    font-size: 20px;
-  }
+  // .sectionTitle {
+  //   color: forestgreen;
+  //   font-size: 20px;
+  // }
 `
 
 
