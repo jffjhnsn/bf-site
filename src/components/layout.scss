@@ -1,3 +1,4 @@
+// Global Styles
 * {
   -webkit-box-sizing:border-box;
   box-sizing:border-box
@@ -74,12 +75,7 @@ body {
   -ms-flex-positive:1;
   flex-grow:1
 }
-.container {
-  max-width:1040px; /* large */
-  margin:0 auto;
-  padding:0 20px;
-  width:100%;
-}
+
 /* mobile first */
 .sectionTitle {
   font-weight: 400;

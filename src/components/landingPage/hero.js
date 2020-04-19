@@ -1,15 +1,25 @@
 import React from 'react'
-// import Img from "gatsby-image";
 import styled from 'styled-components'
 
 const Hero = props => (
   <>
-    <Headline className="sectionTitle">{props.headline}</Headline>
-    <BodyText className="bodyText">{props.text}</BodyText>
+    <Headline className="sectionTitle">The cross-border payments platform</Headline>
+    <BodyText className="bodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          eu neque eu dolor suscipit porttitor vel vitae mauris. Quisque vel 
+          tortor vulputate, fringilla lorem pharetra, dictum nisl. Aenean vulputate sem leo, 
+          id tempus ipsum iaculis et.
+    </BodyText>
     <ButtonGroup>
       {/* TODO: apply button colors via color variables */}
-      <li style={{ marginRight: `20px` }}><Button backgroundColor="#2f64ec" color="white" href={props.primaryButtonLink}>{props.primaryButtonText}</Button></li>
-      <li><Button href={props.secondaryButtonLink}>{props.secondaryButtonText}</Button></li>
+      <li style={{ marginRight: `20px` }}>
+        <Button 
+          backgroundColor="#2f64ec" 
+          color="white" 
+          href="https://styled-components.com/docs/basics#passed-props">
+            Start Now
+        </Button>
+      </li>
+      <li><Button href="https://github.com/KyleAMathews/typography.js">Contact Us</Button></li>
     </ButtonGroup>
   </>
 )

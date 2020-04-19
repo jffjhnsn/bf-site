@@ -1,13 +1,8 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
+import Container from "./container"
 
 import Header from "./header"
 import "./layout.scss"
@@ -29,12 +24,20 @@ const Layout = ({ children }) => {
       <div className="globalContent">
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, {data.site.siteMetadata.title}
+          <GlobalFooter>
+            © {new Date().getFullYear()}, {data.site.siteMetadata.title}
+          </GlobalFooter>
         </footer>
       </div>
     </>
   )
 }
+
+const GlobalFooter = styled(Container)`
+  // TODO: (fix) Changes below not being implemented
+  padding-top: 60px;
+  padding-bottom: 60px;
+`
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
