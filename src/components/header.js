@@ -3,10 +3,11 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import Logo from "../assets/company-logo.svg"
+import Container from "./container"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <Container className="container">
+    <HeaderContainer>
       <Link to="/">
         <Logo height="59" width="189" alt={siteTitle}/>
       </Link>
@@ -14,11 +15,11 @@ const Header = ({ siteTitle }) => (
         <ListLink to="/products/">Products</ListLink>
         <ListLink to="/company/">Company</ListLink>
       </NavLinkList>
-    </Container>
+    </HeaderContainer>
   </header>
 )
 
-const Container = styled.div`
+const HeaderContainer = styled(Container)`
   padding-top: 20px;
 `
 

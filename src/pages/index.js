@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import styled from "styled-components"
 import SEO from "../components/seo"
+import Container from "../components/container"
 // import Image from "../components/image"
 // import { Link } from "gatsby"
 
@@ -31,12 +32,12 @@ const LandingPage = () => (
   </Layout>
 )
 
-const Container = styled.section`
-  max-width:1040px;
-  margin:0 auto;
-  padding:0 20px;
-  width:100%;
-`
+// const Container = styled.section`
+//   max-width:1040px;
+//   margin:0 auto;
+//   padding:0 20px;
+//   width:100%;
+// `
 
 const HeroContainer = styled(Container)`
   padding-top: 160px;
