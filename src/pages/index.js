@@ -16,6 +16,7 @@ const LandingPage = () => (
   <Layout>
     <SEO title="Home" />
     <header>
+      
       <HeroContainer>
         <Hero />
       </HeroContainer>
