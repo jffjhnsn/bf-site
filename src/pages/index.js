@@ -18,19 +18,27 @@ const LandingPage = () => (
         <Hero />
       </HeroContainer>
     </header>
-    <BenefitsContainer>
-      <Benefits />
-    </BenefitsContainer>
+    <Background primary>
+      <BenefitsContainer>
+        <Benefits />
+      </BenefitsContainer>
+    </Background>
     <FeatureContainer>
       <Feature />
     </FeatureContainer>
     <footer>
-      <CTAContainer>
-        <CTA />
-      </CTAContainer>
+      <Background primary>
+        <CTAContainer>
+          <CTA />
+        </CTAContainer>
+      </Background>
     </footer>
   </Layout>
 )
+
+const Background = styled.div`
+  background-color: ${props => (props.primary ? '#f1f6f9' : '#fff')};
+`
 
 const HeroContainer = styled(Container)`
   padding-top: 160px;
