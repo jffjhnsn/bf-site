@@ -33,7 +33,7 @@ const ListLink = props => (
 
 const StyledListLink = styled.div`
   display: inline-block;
-  margin-right: 1rem;  
+  margin-right: 1rem; 
   // text-decoration: none;
 
 `
@@ -42,7 +42,11 @@ const NavLinkList = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   list-style: none;
-  float: right;
+
+  // NOTE: need to change to hamburger once more pages added
+  @media (min-width: 460px) {
+    float: right;
+  }
 `
 
 Header.propTypes = {

@@ -3,8 +3,6 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 import SEO from "../components/seo"
 import Container from "../components/container"
-// import Image from "../components/image"
-// import { Link } from "gatsby"
 
 // Landing page content:
 import Hero from "../components/landingPage/hero"
@@ -16,7 +14,6 @@ const LandingPage = () => (
   <Layout>
     <SEO title="Home" />
     <header>
-      
       <HeroContainer>
         <Hero />
       </HeroContainer>
@@ -28,17 +25,12 @@ const LandingPage = () => (
       <Feature />
     </FeatureContainer>
     <footer>
-      <CTA />
+      <CTAContainer>
+        <CTA />
+      </CTAContainer>
     </footer>
   </Layout>
 )
-
-// const Container = styled.section`
-//   max-width:1040px;
-//   margin:0 auto;
-//   padding:0 20px;
-//   width:100%;
-// `
 
 const HeroContainer = styled(Container)`
   padding-top: 160px;
@@ -57,6 +49,12 @@ const BenefitsContainer = styled(Container)`
 
 const FeatureContainer = styled(Container)`
   padding-bottom: 60px;
+`
+
+const CTAContainer = styled(Container)`
+  background-color: #f1f6f9;
+  padding-top: 40px;
+  padding-bottom: 40px;
 `
 
 export default LandingPage

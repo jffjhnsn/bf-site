@@ -22,9 +22,6 @@ const CTA = () => (
 export default CTA
 
 const FlexContainer = styled.div`
-  background-color: #f1f6f9;
-  padding-top: 40px;
-  padding-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
