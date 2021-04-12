@@ -4,11 +4,11 @@ import styled from "styled-components"
 import SEO from "../components/seo"
 import Container from "../components/container"
 
-// Landing page content:
-import Hero from "../components/landingPage/hero"
-import Benefits from "../components/landingPage/benefits"
-import Feature from "../components/landingPage/feature"
-import CTA from "../components/landingPage/cta"
+// home page content:
+import Hero from "../components/page-content/home/hero"
+import Benefits from "../components/page-content/home/benefits"
+import Feature from "../components/page-content/home/feature"
+import CTA from "../components/page-content/home/cta"
 
 const LandingPage = () => (
   <Layout>
