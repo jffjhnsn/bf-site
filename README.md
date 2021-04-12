@@ -1,6 +1,6 @@
 # borderfree.io
 
-Current live version: <bf-site.onrender.com>
+Current live version: [bf-site.onrender.com](bf-site.onrender.com)
 
 ## Run the site locally
 
@@ -31,3 +31,12 @@ If you get any errors, try running
 ```bash
 npm update && npm install
 ```
+
+## Website structure
+
+`src/`  
+`├── assets/` Contains all images, SVGs, GIFs   
+`├── components/` Contains all react components used in building the site, most of these are structural and don't need to be changed  
+`├── ├── page-content/` Holds the content components for each page (e.g. `Home`). **If you want to change the content of a page, look here first.**  
+`├── ├── layout.scss` Global styles for the site  
+`├── pages/` All webpages  
