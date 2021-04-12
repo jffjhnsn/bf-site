@@ -38,5 +38,24 @@ npm update && npm install
 `├── assets/` Contains all images, SVGs, GIFs   
 `├── components/` Contains all react components used in building the site, most of these are structural and don't need to be changed  
 `├── ├── page-content/` Holds the content components for each page (e.g. `Home`). **If you want to change the content of a page, look here first.**  
-`├── ├── layout.scss` Global styles for the site  
+`├── ├── layout.scss` Global styles for the site (i.e. colors, font, spacing) 
 `├── pages/` All webpages  
+
+## Contributing
+
+This repository is organized using [branches (link to Github docs)](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches).  
+The `master` branch is always deployed and available at [bf-site.onrender.com](bf-site.onrender.com). So we should always try to keep master working.  
+When you want to make changes, first make sure you are up-to-date with the current version by running  
+```git pull```
+
+Then, create a new branch with  
+```git checkout -b <insert_branch_name_here>``` 
+
+Now make any changes you want.
+
+To save and publish changes, first use `git add <file_name>` to add the changes on a file or `git add .` to add the changes for all files. Then commit the changes with a commit message using `git commit -m "your commit message"`. Finally, push (upload) your changes with `git push`.
+
+At any time, you can switch between branches with `git checkout <branch_name>`. Keep in mind to first publish any commits.
+
+Once your changes are ready to be integrated, open a pull request from your branch to master. Pull requests can be opened and managed on Github under "Pull Requests". The changes will then be reviewed and merged with master when ready.
+
