@@ -12,7 +12,7 @@ import CTA from "../components/landingPage/cta"
 
 const LandingPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO />
     <header>
       <HeroContainer>
         <Hero />
