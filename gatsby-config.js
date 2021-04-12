@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `borderfree.io`,
-    description: `The Direct to Consumer platform for large bands.`,
+    description: `The Direct to Consumer platform for large brands.`,
     author: `@jffjhnsn`,
   },
   plugins: [
