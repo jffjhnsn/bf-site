@@ -2,6 +2,11 @@
 
 Current live version: [bf-site.onrender.com](bf-site.onrender.com)
 
+## Contents
+- [Run the site locally](https://github.com/tayjoh/bf-site#run-the-site-locally)
+- [Website structure](https://github.com/tayjoh/bf-site#website-structure)
+- [Contributing](https://github.com/tayjoh/bf-site#contributing)
+
 ## Run the site locally
 
 The site is built using [Gatsby](https://www.gatsbyjs.com/).
@@ -34,6 +39,10 @@ npm update && npm install
 
 ## Website structure
 
+Pages are built using react components. For example, the content of the home page (`index.js`) is composed of components located in `src/components/page-content/home/`. The home page currently has four main content components: `Hero`, `Benefits`, `Feature`, `CTA`.  
+`Benefits` and `Feature` are outdated and should probably become more generalized components like `ThreeColumn` and `SectionRightAlign`.
+
+Main folders/files of interest:  
 `src/`  
 `├── assets/` Contains all images, SVGs, GIFs   
 `├── components/` Contains all react components used in building the site, most of these are structural and don't need to be changed  
