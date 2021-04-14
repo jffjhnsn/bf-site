@@ -3,11 +3,10 @@ import styled from 'styled-components'
 
 const Hero = props => (
   <>
-    <Headline className="sectionTitle">The cross-border payments platform</Headline>
-    <BodyText className="bodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          eu neque eu dolor suscipit porttitor vel vitae mauris. Quisque vel 
-          tortor vulputate, fringilla lorem pharetra, dictum nisl. Aenean vulputate sem leo, 
-          id tempus ipsum iaculis et.
+    <Headline className="sectionTitle">Composable SaaS commerce infrastructure</Headline>
+    <BodyText className="bodyText">Our serverless cloud platform enables merchants, 
+      marketplaces and enterprises to focus on building their product and not 
+      payments and commerce tools.
     </BodyText>
     <ButtonGroup>
       {/* TODO: apply button colors via color variables */}
@@ -30,7 +29,7 @@ const Headline = styled.h1`
   font-size: 32px;
 
   @media (min-width: 670px) {
-    max-width: 420px;
+    max-width: 440px;
     font-size: 40px;
   }
 `
