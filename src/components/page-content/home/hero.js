@@ -3,11 +3,10 @@ import styled from 'styled-components'
 
 const Hero = props => (
   <>
-    <Headline className="sectionTitle">The cross-border payments platform</Headline>
-    <BodyText className="bodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          eu neque eu dolor suscipit porttitor vel vitae mauris. Quisque vel 
-          tortor vulputate, fringilla lorem pharetra, dictum nisl. Aenean vulputate sem leo, 
-          id tempus ipsum iaculis et.
+    <Headline className="sectionTitle">Future proof your payments</Headline>
+    <BodyText className="bodyText"><strong>Borderfree</strong> is a low code, embedded payment 
+      infrastructure that enables marketplaces and enterprises to create a seamless 
+      payment experience while dramatically reducing the cost and complexity of payments.
     </BodyText>
     <ButtonGroup>
       {/* TODO: apply button colors via color variables */}
