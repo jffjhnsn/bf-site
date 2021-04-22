@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Hero = props => (
   <>
-    <Headline className="sectionTitle">The cross-border payments platform</Headline>
+    <Headline className="sectionTitle">Testing PR Previews</Headline>
     <BodyText className="bodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           eu neque eu dolor suscipit porttitor vel vitae mauris. Quisque vel 
           tortor vulputate, fringilla lorem pharetra, dictum nisl. Aenean vulputate sem leo, 
